@@ -11,6 +11,11 @@ void test_show_info (int val);
 int main (int argc, char *argv[])
 {
 	test_show_info (12345);
+	short x = 12345;
+	short mx = -x;
+
+	show_byte ((byte_pointer)&x, sizeof (short));
+	show_byte ((byte_pointer)&mx, sizeof (short));
 
 	return 0;	
 }
