@@ -6,7 +6,7 @@ int str_longer (char *s, char *t);
 int main (int argc, char *argv[])
 {
 	char a[] = "hello";
-	char b[] = "worlddd";
+	char b[] = "word";
 
 	printf ("%d\n", str_longer (a, b));
 
@@ -15,7 +15,7 @@ int main (int argc, char *argv[])
 
 int str_longer (char *s, char *t)
 {
-	return strlen (s) - strlen (t) > 0;
+	return strlen (s) > strlen (t);
 }
 
 
