@@ -3,12 +3,12 @@
 using std::cout;
 using std::endl;
 
-bool uadd_ok (unsigned a, unsigned b);
+bool uadd_ok (unsigned short a, unsigned short b);
 
 int main (int argc, char *argv[])
 {
-	unsigned a1 = 3454534233;
-	unsigned a2 = 4534235;
+	unsigned short a1 = 33768;
+	unsigned short a2 = 32767;
 	//unsigned a2 = 0;
 
 	if (uadd_ok (a1, a2))
@@ -17,8 +17,8 @@ int main (int argc, char *argv[])
 	return 0;
 }
 
-bool uadd_ok (unsigned a, unsigned b)
+bool uadd_ok (unsigned short a, unsigned short b)
 {
-	unsigned sum = a + b;
+	unsigned short sum = a + b;
 	return sum >= a && sum >= b;
 }
